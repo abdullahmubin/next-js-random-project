@@ -2,6 +2,7 @@ import Link from "next/link";
 import MaxWidthWrapper from "../MaxWidthWrapper";
 import { buttonVariants } from "./button";
 import { LoginLink, RegisterLink } from "@kinde-oss/kinde-auth-nextjs/server";
+import { ArrowRight } from "lucide-react";
 
 const Navbar = () => {
 
@@ -24,7 +25,8 @@ const Navbar = () => {
                             <RegisterLink className={buttonVariants({
 
                                 size: 'sm',
-                            })}>Get started</RegisterLink>
+                            })}>Get started <ArrowRight className="ml-1.5 h-5 w-5" />
+                            </RegisterLink>
                         </>
                     </div>
                 </div>

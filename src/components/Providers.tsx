@@ -26,3 +26,5 @@ const Providers = ({ children }: PropsWithChildren) => {
         </trpc.Provider>
     )
 }
+
+export default Providers;

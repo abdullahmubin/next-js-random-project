@@ -2,6 +2,7 @@
 
 // import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/dist/types/server";
 
+import Dashboard from "@/components/Dashboard";
 import { getKindeServerSession } from "@kinde-oss/kinde-auth-nextjs/server";
 import { redirect } from "next/navigation";
 
@@ -19,7 +20,7 @@ const Page = async () => {
 
 
 
-    return (<div>hi {user?.email} bye</div>)
+    return (<Dashboard />)
 }
 
 export default Page;

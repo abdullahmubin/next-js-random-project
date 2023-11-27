@@ -37,7 +37,19 @@ export const appRouter = router({
         return { success: true }
 
         // })
+    }),
+    getUserFiles: publicProcedure.query(async ({ ctx }) => {
+        const { userId, user } = ctx;
+
+        //     return await db.file.findMany({
+        //     where: {
+        //         userId: userId
+        //     }
+        // })
+
+        return [{ name: 'a' }, name: 'b']
     })
+
     // hello: procedure
     //     .input(
     //         z.object({
